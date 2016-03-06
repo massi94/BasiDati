@@ -1,0 +1,13 @@
+DROP TRIGGER IF EXISTS upIva;
+DELIMITER |
+CREATE TRIGGER upIva
+BEFORE Update ON Prodotto
+FOR EACH ROW
+BEGIN
+
+IF(Old.Iva<>New.IVA)
+THEN
+set New.Prezzo_Vendita=New.Prezzo_Vendita*(1+(NEW.IVA/100));
+END IF;
+END |
+DELIMITER ;

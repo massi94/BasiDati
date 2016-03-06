@@ -1,0 +1,279 @@
+@import "style_ddt.css";
+
+/* Generale */
+body{
+	overflow-x: hidden;
+	height: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+
+/* List of classes */
+
+.frame{
+    float: left;
+}
+
+.input_text{
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    
+    padding: 3px 0px 0px 8px;
+}
+
+.input_text #label{
+    width: 25%;
+    float: left;
+
+	padding-top: 3px;fieldset html
+}
+
+.input_text #form{
+    float: left;
+}
+
+
+.list_product{
+	width: 100%;
+	height: 450px;
+	
+	padding: 0px;
+}
+
+.list_product #attribute_product{
+	width: 1045px;
+	height: 30px;
+
+	padding-left: 20px;
+}
+
+.list_product #view_product{
+	max-height: 350px;
+
+	padding-left: 20px;
+	margin-right: 20px;
+
+	overflow-y: scroll;
+}
+
+.list_product #line_bottom{
+	width: 1045px; 
+	
+	border-top-style: solid; 
+	border-top-width: 2px; 
+
+	margin-left: 20px
+}
+
+.list_product #tools
+{
+	padding: 20px 0px 0px 20px;
+}
+
+
+.lnk_maschera ul{
+	list-style: none;
+	padding: 0px;
+}
+
+.lnk_maschera ul ul{
+	list-style: square;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.main{
+    	width: 1300px;
+    	height: 704px;
+    
+    	border-style: solid;
+}
+
+.main .intestazione{
+    width: 100%;
+    height: 50px;
+    
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    
+    text-align: center;
+}
+
+.main .left{
+    width: 200px;
+    height: 652px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-color: black;
+    float: left;
+}
+
+.main .left .lnk_maschera{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    padding: 10px;
+}
+
+
+.search_product{
+    width: 100%;
+    height: 48px;
+
+	padding-top: 5px;
+}
+
+
+.search_product #by_model{
+    width: 30%;
+    height: 100%;
+    
+    float: left;
+}
+	
+.search_product #by_supplier{
+    width: 60%;
+    height: 100%;
+    
+    float: left;
+}
+
+.search_product #by_supplier #supplier{
+    width: 50%;
+    height: 100%;
+    
+    float: left;
+}
+
+.search_product #by_supplier #unique{
+    width: 50%;
+    height: 100%;
+    
+    float: left;
+}
+
+
+.search_product #send{    
+    float: left;
+	padding-top: 3px;
+}
+
+
+.window{
+    width: 1098px;
+    height: 652px;
+}
+
+
+/* List of id */
+
+#list_category{
+	position: absolute;
+
+	width: 150px;
+	height: 580px;
+
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+
+#list_category ul{
+	list-style: none;
+	padding: 0; 
+	
+	text-align: center;
+}
+
+
+#list_category li{
+	margin: 10px 0px 0px 0px;
+	position: relative;
+}
+
+
+#list_category li a{
+	color: black;
+}
+
+#list_category li ul{
+	display: none;
+}
+
+#list_category li:hover ul{
+	display: block;
+    
+	left: 150px;
+
+	position: absolute;
+	margin: -25px 0px 0px 0px;
+	padding: 5px;
+	text-align: center;
+
+	border-style: solid;
+	border-width: 2px;
+    
+    z-index: 1;
+    
+    background-color: white;
+}
+
+
+#list_category .macro{
+	text-align: center;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+
+#list_category .macro .etichetta{
+	width: 80px;
+	float: left;
+}
+
+
+#list_category .macro .freccia{
+	float: left;
+}
+
+
+#list_category .spaziatura{
+	margin: 30px 0px 0px 0px;
+}
+
+
+#path_category{
+    width: 98%;
+    height: 18px;
+    
+    padding-top: 4px;
+    padding-left: 8px;
+    
+    text-align: left;
+    font-size: 13px;
+}
+
+#search{
+	width: 100%;
+	height: 70px;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+#view_table{
+    height: 100%;
+
+    border-left-style: solid;
+    border-left-width: 2px;
+    
+	padding-left: 20px;
+
+    position: relative; 
+    left: 150px;
+}
+

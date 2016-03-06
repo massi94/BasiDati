@@ -1,0 +1,9 @@
+DELIMITER |
+DROP FUNCTION IF EXISTS TotaleAcquisto|
+CREATE FUNCTION TotaleAcquisto (Id_Acq INTEGER) RETURNS DECIMAL(8,2)
+BEGIN
+DECLARE Totale DECIMAL(8,2);
+SELECT SUM(R.Prezzo_Vendita) INTO Totale FROM Riguarda as R WHERE R.Acquisto=Id_Acq;
+RETURN Totale;
+END |
+DELIMITER;

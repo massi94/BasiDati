@@ -1,0 +1,14 @@
+generale:
+	costruire una funzione che restituisce un valore dalla riga risultante dalla query
+
+utente.php:
+	Controllo del signin che distingua tra campi non validi o utente non trovato
+
+setting.php:
+	Creazione di messaggi, gli errori sono messaggi e non booleani
+
+vendite.php:
+	Messaggio di acquisto prodotto con giacenza inferiore
+
+database:
+	Togliere data dalla tabella Ricevuta
